@@ -7,8 +7,8 @@ public class Income : Transaction
 
     }
 
-    public Income(string name, string description, decimal amount, DateTime dueDate)
-        : base(name, description, amount, dueDate)
+    public Income(string name, string description, decimal amount, DateTime dueDate, string note)
+        : base(name, description, amount, dueDate, note)
     {
         
     }

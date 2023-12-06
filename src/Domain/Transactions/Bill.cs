@@ -12,11 +12,12 @@ public class Bill : Transaction
         string description,
         decimal amount,
         DateTime dueDate,
+        string note,
         EBillType type,
         DateTime purchaseDate,
         int installments,
         int currentInstallment)
-        : base(name, description, amount, dueDate)
+        : base(name, description, amount, dueDate, note)
     {
         Type = type;
         PurchaseDate = purchaseDate;

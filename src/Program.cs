@@ -1,4 +1,7 @@
+using PersonalFinances.src.Infra.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["ConnectionString:FinancesDb"]);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
