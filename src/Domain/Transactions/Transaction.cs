@@ -2,10 +2,7 @@
 
 public abstract class Transaction : BaseEntity
 {
-    public Transaction()
-    {
-        Payed = false;
-    }
+    public Transaction() => Payed = false;
 
     public Transaction(string name, string description, decimal amount, DateTime dueDate) : this()
     {
